@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,700;1,200;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Super Password Creator</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="welcome">
+                <h1>HELLO!</h1>
+            </div>
+            <div class="boxes">
+                <div class="card animate__animated " id="card">
+                    <div class="p-title">
+                        <button class="copy-btn" id="copy-btn">Copy!</button>
+                    </div>
+                    <form action="" id="form">
+                        <div class="form-group">
+                            <label for="p-length">Password Length</label>
+                            <input type="number" class="form-control" id="p-length" min="5" max="25" placeholder="Write a number from 5 to 25!">
+                        </div>
+                        <div class="form-group">
+                            <label for="p-symbols">Symbols?</label>
+                            <input type="checkbox" class="form-control check" id="p-symbols">
+                        </div>
+                        <div class="form-group">
+                            <label for="p-upper">Uppercase?</label>
+                            <input type="checkbox" class="form-control check" id="p-upper">
+                        </div>
+                        <div class="form-group">
+                            <label for="p-number">Numbers?</label>
+                            <input type="checkbox" class="form-control check" id="p-number">
+                        </div>
+                        <button class="send-btn" id="send-btn">Try it!</button>
+                    </form>
+                </div>
+                <div class="box animate__animated  hide" id="box">
+                    <h1>Here's your password!</h1>
+                    <div class="output">
+                        <p id="output"></p>
+                    </div>
+                    <button class="try-again" id="try-btn">Try again!</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <script src="./script.js"></script>
+    </footer>
+</body>
+</html>

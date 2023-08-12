@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(21, 32, 43);
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+form{
+    position: relative;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.welcome{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.card, .box{
+    padding: 1.5rem;
+    background-color: rgb(25, 39, 52);
+    width: 400px;
+    min-height: 255px;
+    border: 1px solid rgb(136, 153, 166);
+    border-radius: 17px;
+    transition: all 0.2s;
+}
+
+.p-title{
+    position: relative;
+    border-bottom: 1px solid rgb(136, 153, 166);
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.copy-btn{
+    position: absolute;
+    right: 10px;
+    top: -6px;
+    padding: 0.5rem;
+    border:none;
+    border-radius: 20px;
+    width: 100px;
+    background-color: rgb(29, 155, 240);
+    font-weight: bold;
+    color: white;
+    transition: all 0.2s;
+}
+
+.copy-btn:hover{
+    background-color: rgb(18, 94, 145);
+}
+
+.send-btn{
+    padding: 0.5rem;
+    border:none;
+    border-radius: 20px;
+    width: 100px;
+    background-color: rgb(29, 155, 240);
+    font-weight: bold;
+    color: white;
+    transition: all 0.2s;
+}
+
+.send-btn:hover{
+    background-color: rgb(18, 94, 145);
+}
+
+.form-group{
+    margin: 0 auto 1.25rem auto;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    height: 2.4rem;
+    padding: 0.39rem 0.78rem;
+    border: 1px solid #ced4da;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+.output{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 1px solid rgb(136, 153, 166);
+    border-radius: 17px;
+    background-color: rgb(246, 251, 255);
+    margin-top: 2rem;
+    color: black;
+}
+
+.output p {
+    padding: 1rem;
+}
+
+
+.try-again{
+    margin-top: 2rem;
+    padding: 0.5rem;
+    border:none;
+    border-radius: 20px;
+    width: 100px;
+    background-color: rgb(29, 155, 240);
+    font-weight: bold;
+    color: white;
+    transition: all 0.2s;
+}
+
+.try-again:hover{
+    background-color: rgb(18, 94, 145);  
+}
+
+.box{
+    width: 482px;
+}
+
+.boxes{
+    display: flex;
+    height: 500px;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
